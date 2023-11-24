@@ -4,7 +4,8 @@
 
 */
 :root{
-    --bs-light-rgb: rgb(255, 255, 255)
+    --bs-light-rgb: rgb(255, 255, 255);
+    --bs-btn-hover-bg:rgba(255, 255, 255, 0.612);
 }
 
 .main-container-flex{
@@ -19,17 +20,30 @@ aside{
     height: 100%;
     background-color:#051E34;
     background-size:cover;
-    background-attachment: scroll;;
+    background-position-y: top;
 }
 
 .main-content{
-    width: calc(100% - 80px);
+    width: calc(100% - 150px);
     flex-grow: 1;
+    height: calc(100vh - 80px);
+    overflow: auto;
 }
 
 
+.main-container-flex li i{
+    color: white;
+    display: inline-block;
+}
 
+.main-container-flex ul{
+    list-style: none;
+    display: inline;
+}
 
+.main-container-flex ul li a{
+    display: inline-block;
+}
 
 
 /* 
@@ -58,12 +72,27 @@ header{
 */
 
 
+
 /* 
 
     ASIDE
 
 */
+.aside-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
 
+.aside-flex div:nth-child(1){
+   flex-grow: 1;
+}
+
+.aside-flex .btn i{
+    color: white;
+    margin-right: 10px;
+}
 
 
 /* 
@@ -80,6 +109,10 @@ header{
 
 */
 
+
+
+
+
 @media screen and (max-width:768px) {
     header .row .col-sm-auto > img:nth-child(2){
         display: block;
@@ -93,5 +126,21 @@ header{
     header .fa-circle-question,
     header .fa-ellipsis-vertical{
         display: none;
+    }
+
+    .aside-flex span{
+        display: none;
+    }
+
+    .aside-flex{
+        width: 70px;
+    }
+
+    .aside-flex .btn:nth-child(3){
+        margin-left: 6px;
+    }
+
+    .aside-flex .btn{
+        margin-top: 10px;
     }
 }
