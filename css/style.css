@@ -3,6 +3,33 @@
     GENERAL
 
 */
+:root{
+    --bs-light-rgb: rgb(255, 255, 255)
+}
+
+.main-container-flex{
+    display: flex;
+    height: calc(100vh - 80px);
+}
+
+
+aside{
+    width: 150px;
+    background-image: url(../img/sidebar-bg.png);
+    height: 100%;
+    background-color:#051E34;
+    background-size:cover;
+    background-attachment: scroll;;
+}
+
+.main-content{
+    width: calc(100% - 80px);
+    flex-grow: 1;
+}
+
+
+
+
 
 
 /* 
@@ -10,6 +37,18 @@
    HEADER
 
 */
+header .row .col-sm-auto > img:nth-child(2){
+    display: none;
+    max-width: 40px;
+}
+
+.btn i{
+    color: gold;
+}
+
+header{
+    height: 80px;
+}
 
 
 /* 
@@ -40,3 +79,19 @@
     RESPONSIVE
 
 */
+
+@media screen and (max-width:768px) {
+    header .row .col-sm-auto > img:nth-child(2){
+        display: block;
+    }
+    
+    header .row .col-sm-auto > img:nth-child(1){
+        display: none;
+    }
+
+    header .fa-list-ul,
+    header .fa-circle-question,
+    header .fa-ellipsis-vertical{
+        display: none;
+    }
+}
