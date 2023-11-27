@@ -82,6 +82,38 @@ body > header{
     display: none;
 }
 
+.card-body img{
+    max-width: 25px;
+    margin-right: 4px;
+}
+
+.my-width-tab{
+    width: 60%;
+}
+
+td span{
+    font-size: 12px;
+    font-weight: 500;
+}
+
+th span{
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.my-font-size-badge{
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.riquadro{
+    border: 1px solid #6C757D;
+    border-radius: 5px;
+    padding: 4px 5px;
+    color:#6C757D;
+}
+
+
 /* 
 
     ASIDE
@@ -161,6 +193,15 @@ body > header{
     .my-badge span:nth-child(6){
         display: inline-block;
     }
-  
+    
+    thead th:nth-child(2),
+    thead th:nth-child(3){
+        display: none;
+    }
+
+    tbody tr td:nth-child(1),
+    tbody tr td:nth-child(2){
+        display: none;
+    }
     
 }
