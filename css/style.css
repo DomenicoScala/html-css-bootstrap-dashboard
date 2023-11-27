@@ -60,7 +60,7 @@ header .row .col-auto > img:nth-child(2){
     color: gold;
 }
 
-header{
+body > header{
     height: 80px;
 }
 
@@ -70,8 +70,17 @@ header{
     MAIN
 
 */
+.main-content header{
+    background-color:#1B72E8;    
+}
 
+.my-background-badge{
+    background-color:#165BBA;
+}
 
+.my-badge span:nth-child(6){
+    display: none;
+}
 
 /* 
 
@@ -142,4 +151,16 @@ header{
     .aside-flex .btn{
         margin-top: 10px;
     }
+
+    .my-badge span:nth-child(3),
+    .my-badge span:nth-child(4),
+    .my-badge span:nth-child(5){
+        display: none;
+    }
+
+    .my-badge span:nth-child(6){
+        display: inline-block;
+    }
+  
+    
 }
