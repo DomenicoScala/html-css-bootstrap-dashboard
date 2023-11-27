@@ -24,8 +24,9 @@
                        <img class="img-fluid" src="./img/mobile-logo.png" alt="logo-mobile">
                     </div>
 
-                    <div class="col col-lg col-md col-sm">
-                        <input class="form-control form-control-lg bg-body-secondary fs-6" type="text" placeholder="Prova a cercare: Lezioni di Laravel" aria-label=".form-control-lg example">
+                    <div class="col col-lg col-md col-sm position-barra">
+                        <span><i class="fa-solid fa-magnifying-glass position-search"></i></span>
+                        <input class="form-control form-control-lg bg-body-secondary fs-6 my-padding-search" type="text" placeholder="Prova a cercare: Lezioni di Laravel" aria-label=".form-control-lg example">
                     </div>
 
                     <div class="col-auto col-lg-auto my-auto px-0">
@@ -68,7 +69,7 @@
                    <header>
                         <div class="container-fluid">
                             <div class="row px-1 py-2">
-                                <div class="col-12 col-sm-6 order-2 order-md-1 my-2">
+                                <div class="col-12 col-sm-6 order-2 order-md-1 order-lg-1 order-sm-1 my-2">
                                     <h2 class="text-white d-inline-block align-middle">Boolean</h2>
                                     <span class="badge rounded-pill my-background-badge mx-2">Piano blaze</span>
                                     <div class="my-badge">
@@ -80,24 +81,107 @@
                                     </div>
                                 </div>
 
-                                <div class="col-12 col-sm-4 order-3 order-md-2 my-2">
+                                <div class="col-12 col-sm-4 order-3 order-md-2 order-lg-2 order-sm-2 my-2">
                                     <p class="text-white my-0">Studenti online negli ultimi 30 minuti</p>
                                     <div>
                                         <p class="text-white fs-2 fw-medium ">125</p>
                                     </div>
                                 </div>
 
-                                <div class="col-12 col-sm-2 order-1 order-md-3 my-2">
+                                <div class="col-12 col-sm-2 order-1 order-md-3 order-lg-3 order-sm-2 my-2">
                                     <p class="text-white d-inline-block mx-2">Nuovo Studente</p>
                                     <button class="btn btn-outline-light " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus text-white"></i></button>
-                                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                    <div class="offcanvas w-50 offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                                     <div class="offcanvas-header">
-                                        <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                                        <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                     </div>
                                     <div class="offcanvas-body">
-                                        ...
-                                    </div>
+                                        <div class="row">
+                                            <div class="col mb-3">
+                                                <label for="inputname" class="form-label">Nome</label>
+                                                <input type="text" class="form-control"  aria-label="First name">
+                                            </div>
+                                            <div class="col">
+                                                <label for="inputcognome" class="form-label">Cognome</label>
+                                                <input type="text" class="form-control" aria-label="Last name">
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col mb-3">
+                                                <div class="col">
+                                                    <label for="inputPassword4" class="form-label">Email</label>
+                                                    <div class="input-group">
+                                                        <span class="input-group-text">@</span>
+                                                        <input type="email" class="form-control" id="inputPassword4">
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+
+                                            <div class="col">
+                                                <label for="inputPassword4" class="form-label">Password</label>
+                                                <input type="password" class="form-control" id="inputPassword4">
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col mb-3">
+                                                <div class="col">
+                                                    <label for="inputPassword4" class="form-label"> Indirizzo Email</label>
+                                                    <div class="input-group">
+                                                        <span class="input-group-text">@</span>
+                                                        <input type="email" class="form-control" id="inputPassword4">
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+
+                                            <div class="col">
+                                                <label for="inputPassword4" class="form-label">Password</label>
+                                                <input type="password" class="form-control" id="inputPassword4">
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <label for="inputAddress2" class="form-label">Indirizzo</label>
+                                                <input type="text" class="form-control" id="inputAddress2">
+                                            </div>
+                                            <div class="col-md-6 mt-3">
+                                                <label for="inputCity" class="form-label">Città</label>
+                                                <input type="text" class="form-control" id="inputCity">
+                                            </div>
+                                            <div class="col-md-4 mt-3">
+                                                <label for="inputState" class="form-label">Stato</label>
+                                                <select id="inputState" class="form-select">
+                                                  <option selected>Choose...</option>
+                                                  <option>...</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-2 mt-3">
+                                                <label for="inputZip" class="form-label">CAP</label>
+                                                <input type="text" class="form-control" id="inputZip">
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="mb-3">
+                                                    <label for="formFile" class="form-label">Foto</label>
+                                                    <input class="form-control" type="file" id="formFile">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <input type="checkbox"><span class="mx-1 align-text-bottom">Seleziona per proseguire</span>
+                                        </div>
+                                        <div class="mt-2">
+                                            <button type="button" class="btn btn-primary">Salva</button>
+                                            <button type="button" class="btn btn-warning">Svuota</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

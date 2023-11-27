@@ -64,7 +64,20 @@ body > header{
     height: 80px;
 }
 
+.position-barra{
+    position: relative;
+}
 
+.position-search{
+    position: absolute;
+    top: 13px;
+    left: 20px;
+    font-size: 17px;
+}
+
+.my-padding-search{
+    padding: 0 35px;
+}
 /* 
 
     MAIN
@@ -119,6 +132,10 @@ th span{
 
 .main-content section{
     background-color: #F8F9FA;
+}
+
+.canvas-none{
+    display: none;
 }
 
 
