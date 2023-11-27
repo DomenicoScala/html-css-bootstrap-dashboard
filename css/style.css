@@ -82,7 +82,7 @@ body > header{
     display: none;
 }
 
-.card-body img{
+.card-body .img-user{
     max-width: 25px;
     margin-right: 4px;
 }
@@ -111,6 +111,14 @@ th span{
     border-radius: 5px;
     padding: 4px 5px;
     color:#6C757D;
+}
+
+.img-card{
+    width: 100%;
+}
+
+.main-content section{
+    background-color: #F8F9FA;
 }
 
 
